@@ -1,0 +1,22 @@
+﻿body {
+    padding: 20px;
+}
+p {
+    width: 750px;
+}
+input {
+    width: 35px;
+    display: inline-block;
+    margin: 10px;
+}
+.calculate {
+    width: 80px;
+}
+
+h1 {
+    color: navy;
+}
+
+h2{
+    color:cornflowerblue;
+}
