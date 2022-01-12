@@ -1,6 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+
+    <!--Add title to page, icon, import stylesheets-->
     <meta charset="utf-8" />
     <title>All About Me</title>
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -9,12 +11,15 @@
   
 </head>
 <body>
+
+    <!--Header, picture of me doing something I enjoy-->
     <h1>Tyler aka TyBod</h1>
     <img src="img/tennispic.jpeg" alt="tennis pic" height="500"/>
     <br />
     <br />
+
+    <!--Paragraph on what I hope to achieve from the class, expectations-->
     <h2>What I hope to achieve from this class:</h2>
-    
     <p>My goal in this class is to become an absolute ASP.NET and C# guru wizard extravaganza. 
     I hope to learn under Prof Hilton's monstrous wing as I tackle any
     challenges put before me. By the end of the semester I hope to be able to 
@@ -25,6 +30,7 @@
     These are my conditions. You have one day. </p>
     <br />
   
+    <!--Future jobs I'm interested in-->
     <h2>Top 3 Future Jobs:</h2>
     <ol>
         <li>Software Development</li>
@@ -33,11 +39,12 @@
     </ol>
     <br />
 
+    <!--Grade Calculator-->
     <h2>Grade Calculator:</h2>
     <h4>Enter grades below:</h4>
-
-    
     <form>
+
+        <!--Grade calculator form, enter % of each section and it outputs letter and percent grade.-->
         <label>Assignments: </label>
         <input id="intAssignment" /><br />
         <label>Group Project: </label>
@@ -48,11 +55,11 @@
         <input id="intExam" /><br />
         <label>INTEX: </label>
         <input id="intINTEX" /><br />
-
         <input type="button" value="Calculate" id="btnCalculate" class="calculate"/>
 
     </form>
 
+    <!--Import bootstrap, jquery, and javascript files-->
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="lib/jquery/jquery-3.6.0.min.js"></script>
     <script src="js/calculator.js"></script>

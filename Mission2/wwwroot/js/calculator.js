@@ -1,15 +1,21 @@
-﻿$('#btnCalculate').click(function () {
+﻿
+/*Perform this function when the Calculate button is clicked.*/
+$('#btnCalculate').click(function () {
 
+    /*Initialize variables*/
     var assignment, groupProject, quiz, exam, intex, intFinal, letterFinal;
 
+    /*Assign input values to variables*/
     assignment = $('#intAssignment').val();
     groupProject = $('#intGroupProject').val();
     quiz = $('#intQuiz').val();
     exam = $('#intExam').val();
     intex = $('#intINTEX').val();
 
+    /*Calculate % final grade*/
     intFinal = (assignment * .55) + (groupProject * 0.05) + (quiz * 0.1) + (exam * 0.2) + (intex * 0.1);
 
+    /*Determine letter grade with if statements*/
     if (94 <= intFinal) {
         letterFinal = 'A'
     }
@@ -47,6 +53,7 @@
         letterFinal = "E";
     }
 
+    /*alert to page with letter grade and percent grade*/
     alert('Final %: ' + intFinal.toPrecision(4) + ', Letter Grade: ' + letterFinal + '\nWell done soldier!');
 
 })
